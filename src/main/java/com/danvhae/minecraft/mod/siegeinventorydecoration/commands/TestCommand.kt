@@ -32,7 +32,7 @@ class TestCommand :ICommand{
     }
 
     override fun execute(server: MinecraftServer, sender: ICommandSender, args: Array<out String>) {
-        sender.sendMessage(TextComponentString("just §atest command"))
+        sender.sendMessage(TextComponentString("just §a테스트 커맨~드"))
     }
 
     override fun checkPermission(server: MinecraftServer, sender: ICommandSender): Boolean {
