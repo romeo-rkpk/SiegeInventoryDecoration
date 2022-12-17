@@ -1,11 +1,13 @@
 package com.danvhae.minecraft.mod.siegeinventorydecoration;
 
+import com.danvhae.minecraft.mod.siegeinventorydecoration.commands.TestCommand;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -26,6 +28,11 @@ public class SiegeInventoryDecoration {
      */
     @Mod.Instance(MOD_ID)
     public static SiegeInventoryDecoration INSTANCE;
+
+    @Mod.EventHandler
+    public void onServerStart(FMLServerStartingEvent event){
+        event.registerServerCommand(new TestCommand());
+    }
 
     /**
      * This is the first initialization event. Register tile entities here.
