@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "siegeinventorydecoration",
+    "name": "SiegeInventoryDecoration",
+    "description": "Inventory Decoration for Siege content",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://cafe.naver.com/danvhae",
+    "updateUrl": "",
+    "authorList": [
+      "RomeoEqualsJuliet"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": ["kotlinforforge"]
+  }
+]
