@@ -1,4 +1,4 @@
-package com.danvhae.minecraft.mod.siegeinventorydecoration.commands
+package com.danvhae.minecraft.mod.siegeinventorydecoration.abstracts
 
 import net.minecraft.command.ICommand
 import net.minecraft.command.ICommandSender

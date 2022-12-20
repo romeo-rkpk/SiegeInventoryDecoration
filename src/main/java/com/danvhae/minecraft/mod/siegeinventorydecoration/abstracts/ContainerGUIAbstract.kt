@@ -1,4 +1,4 @@
-package com.danvhae.minecraft.mod.siegeinventorydecoration.container
+package com.danvhae.minecraft.mod.siegeinventorydecoration.abstracts
 
 import net.minecraft.client.gui.inventory.GuiContainer
 import net.minecraft.client.renderer.GlStateManager
