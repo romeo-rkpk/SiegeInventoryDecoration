@@ -4,6 +4,7 @@ import net.minecraft.command.ICommand
 import net.minecraft.command.ICommandSender
 import net.minecraft.entity.player.EntityPlayer
 import net.minecraft.server.MinecraftServer
+import net.minecraft.util.math.BlockPos
 
 abstract class InventoryCommandAbstract : ICommand {
 
@@ -26,5 +27,14 @@ abstract class InventoryCommandAbstract : ICommand {
 
     override fun isUsernameIndex(args: Array<out String>, index: Int): Boolean {
         return false
+    }
+
+    override fun getTabCompletions(
+        server: MinecraftServer,
+        sender: ICommandSender,
+        args: Array<out String>,
+        targetPos: BlockPos?
+    ): MutableList<String> {
+        return arrayListOf()
     }
 }
