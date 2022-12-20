@@ -8,6 +8,9 @@ import net.minecraft.util.ResourceLocation
 abstract class ContainerGUIAbstract(val inventorySlotsIn:Container) : GuiContainer(inventorySlotsIn) {
 
     abstract fun texture():ResourceLocation
+    init{
+        xSize = 256; ySize = 256;
+    }
 
     override fun drawGuiContainerBackgroundLayer(partialTicks: Float, mouseX: Int, mouseY: Int) {
         drawDefaultBackground()
@@ -17,6 +20,7 @@ abstract class ContainerGUIAbstract(val inventorySlotsIn:Container) : GuiContain
         val y = (height - ySize) / 2
         drawTexturedModalRect(x, y, 0, 0, xSize, ySize)
     }
+
 
     override fun drawScreen(mouseX: Int, mouseY: Int, partialTicks: Float) {
         super.drawScreen(mouseX, mouseY, partialTicks)
