@@ -5,7 +5,7 @@ import net.minecraft.entity.player.InventoryPlayer
 import net.minecraft.inventory.Container
 import net.minecraft.inventory.Slot
 
-abstract class ContainerAbstract(val playerInv:InventoryPlayer): Container() {
+class SimpleContainer(val playerInv:InventoryPlayer): Container() {
     override fun canInteractWith(playerIn: EntityPlayer): Boolean {
         return true
     }
