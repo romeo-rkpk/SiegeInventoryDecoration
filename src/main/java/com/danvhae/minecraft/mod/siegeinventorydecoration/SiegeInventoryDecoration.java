@@ -1,6 +1,7 @@
 package com.danvhae.minecraft.mod.siegeinventorydecoration;
 
 import com.danvhae.minecraft.mod.siegeinventorydecoration.commands.TestCommand;
+import com.danvhae.minecraft.mod.siegeinventorydecoration.handlers.ModGUIHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -10,6 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(
@@ -40,7 +42,7 @@ public class SiegeInventoryDecoration {
      */
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new ModGUIHandler());
     }
 
     /**
