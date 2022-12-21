@@ -15,7 +15,7 @@ class ModGUIHandler : IGuiHandler{
     }
     override fun getServerGuiElement(ID: Int, player: EntityPlayer?, world: World?, x: Int, y: Int, z: Int): Container? {
         return when(ID){
-            BORAV -> SimpleContainer(player?.inventory?:return null, 0.1)
+            BORAV -> SimpleContainer(player?.inventory?:return null)
             else -> null
         }
     }
