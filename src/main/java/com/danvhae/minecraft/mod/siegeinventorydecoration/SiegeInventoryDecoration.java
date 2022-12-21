@@ -24,7 +24,7 @@ public class SiegeInventoryDecoration {
 
     public static final String MOD_ID = "siegeinventorydecoration";
     public static final String MOD_NAME = "SiegeInventoryDecoration";
-    public static final String VERSION = "0.2.0-a1";
+    public static final String VERSION = "0.3.0";
 
     /**
      * This is the instance of your mod as created by Forge. It will never be null.
