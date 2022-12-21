@@ -2,13 +2,14 @@
   {
     "modid": "siegeinventorydecoration",
     "name": "SiegeInventoryDecoration",
-    "description": "Inventory Decoration for Siege content",
+    "description": "Inventory Decoration for Dream Story Siege content",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "https://cafe.naver.com/danvhae",
     "updateUrl": "",
     "authorList": [
-      "RomeoEqualsJuliet"
+      "RomeoEqualsJuliet",
+      "Blo_ssom214"
     ],
     "credits": "",
     "logoFile": "",
