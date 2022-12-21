@@ -1,6 +1,8 @@
 package com.danvhae.minecraft.mod.siegeinventorydecoration;
 
 import com.danvhae.minecraft.mod.siegeinventorydecoration.commands.BoravCommand;
+import com.danvhae.minecraft.mod.siegeinventorydecoration.commands.DanchuCommand;
+import com.danvhae.minecraft.mod.siegeinventorydecoration.commands.HaeyaCommand;
 import com.danvhae.minecraft.mod.siegeinventorydecoration.commands.TestCommand;
 import com.danvhae.minecraft.mod.siegeinventorydecoration.handlers.ModGUIHandler;
 import net.minecraft.block.Block;
@@ -34,8 +36,9 @@ public class SiegeInventoryDecoration {
 
     @Mod.EventHandler
     public void onServerStart(FMLServerStartingEvent event){
-        event.registerServerCommand(new TestCommand());
+        event.registerServerCommand(new DanchuCommand());
         event.registerServerCommand(new BoravCommand());
+        event.registerServerCommand(new HaeyaCommand());
     }
 
     /**
