@@ -14,8 +14,6 @@ class BoravCommand : InventoryCommandAbstract() {
 
     override fun execute(server: MinecraftServer, sender: ICommandSender, args: Array<out String>) {
         val player = sender as? EntityPlayer ?:return
-        player.openGui(SiegeInventoryDecoration.INSTANCE, ModGUIHandler.BORAV,
-            player.world, player.posX.toInt(), player.posY.toInt(), player.posZ.toInt()
-        )
+        openGUI(player, ModGUIHandler.BORAV)
     }
 }
