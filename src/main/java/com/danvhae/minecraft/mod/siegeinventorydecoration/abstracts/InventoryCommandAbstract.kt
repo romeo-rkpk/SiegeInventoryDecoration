@@ -1,5 +1,6 @@
 package com.danvhae.minecraft.mod.siegeinventorydecoration.abstracts
 
+import com.danvhae.minecraft.mod.siegeinventorydecoration.SiegeInventoryDecoration
 import net.minecraft.command.ICommand
 import net.minecraft.command.ICommandSender
 import net.minecraft.entity.player.EntityPlayer
@@ -36,5 +37,12 @@ abstract class InventoryCommandAbstract : ICommand {
         targetPos: BlockPos?
     ): MutableList<String> {
         return arrayListOf()
+    }
+
+    protected fun openGUI(player: EntityPlayer, guiID:Int){
+        player.openGui(
+            SiegeInventoryDecoration.INSTANCE, guiID,
+            player.world, player.posX.toInt(), player.posY.toInt(), player.posZ.toInt()
+        )
     }
 }
